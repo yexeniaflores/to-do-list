@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #726e6e;
+    background-color: #bccbba;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,9 +11,11 @@ body {
 .container {
     background: white;
     padding: 1.25rem;
-    border-radius: 1rem;
-    width: 20rem;
+    border-radius: .5rem;
+    width: 25rem;
+    min-height: 30rem;
     text-align: center;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -82,4 +84,70 @@ li button:hover {
 
 .checkbox {
     margin-right: .6rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    body {
+        align-items: flex-start;
+        margin-top: 2rem;
+    }
+    .container {
+        width: 80%;
+        min-height: 20rem;
+        padding: 1rem;
+        margin: 0 1rem;
+    }
+
+    button {
+        padding: .4rem 2rem;
+    }
+
+    li {
+        padding: .5rem;
+    }
+
+    li button {
+        padding: .2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        align-items: flex-start;
+        margin-top: 2rem;
+    }
+    .container {
+        width: 90%;
+        min-height: 20rem;
+        padding: 1rem;
+        margin: 0 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #newItem {
+        padding: .5rem;
+    }
+
+    button {
+        padding: .4rem 1.5rem;
+        font-size: .875rem;
+    }
+
+    li {
+        padding: .5rem;
+        font-size: .875rem;
+    }
+
+    li button {
+        padding: .2rem;
+        font-size: .75rem;
+    }
+
+    .checkbox {
+        margin-right: .5rem;
+    }
 }
