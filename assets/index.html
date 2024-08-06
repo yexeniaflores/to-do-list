@@ -1,19 +1,26 @@
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
+    <title>To-Do List</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" ></script>
 </head>
 <body>
+    <!-- Container for the To-Do List -->
     <div class="container">
-        <h1>To-Do-List</h1>
+        <!-- Heading for the To-Do List -->
+        <h1>To-Do List</h1>
+        <!-- Paragraph to display the current date -->
         <p id="currentDate"></p>
-        <input type="text" id="newText" placeholder="New To Do Item...">
-        <button class="add-button">Add</button>
-        <ul id="todo-list"></ul>
+        <!-- Input field for adding new to-do items -->
+        <input type="text" id="newItem" placeholder="Add a new to-do item...">
+        <!-- Button to add the new item -->
+        <button id="addButton">Add</button>
+        <!-- Unordered list to display the to-do items -->
+        <ul id="todoList"></ul>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
