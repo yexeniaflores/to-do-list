@@ -16,6 +16,17 @@ function addItem() {
 
     li.innerText = newItemText;
 
+    var checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.className = 'checkbox';
+    
+    checkbox.addEventListener('change', function() {
+        li.classList.toggle('completed');
+    });
+
+    li.insertBefore(checkbox, li.firstChild);
+    
+
 
 
 }
