@@ -12,5 +12,10 @@ function addItem() {
 
     if (newItemText === '') return;
 
+    var li = document.createElement('li');
+
+    li.innerText = newItemText;
+
+
 
 }
