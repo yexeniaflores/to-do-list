@@ -25,8 +25,13 @@ function addItem() {
     });
 
     li.insertBefore(checkbox, li.firstChild);
-    
 
+    var deleteButton = document.createElement('button');
+    deleteButton.innerText = 'Delete';
+
+    deleteButton.addEventListener('click', function() {
+        li.remove();
+    });
 
 
 }
