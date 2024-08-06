@@ -10,28 +10,28 @@ body {
 
 .container {
     background: white;
-    padding: 20px;
-    border-radius: 8px;
-    width: 300px;
+    padding: 1.25rem;
+    border-radius: 1rem;
+    width: 20rem;
     text-align: center;
 }
 
 h1 {
-    margin: 0 0 10px;
+    margin: 0 0 .6rem;
 }
 
 #currentDate {
-    margin: 10px 0 20px;
-    font-size: 14px;
+    margin: .6rem 0 1rem;
+    font-size: 1rem;
     color: #777;
 }
 
 #newItem {
     width: calc(100% - 22px);
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: .6rem;
+    margin-bottom: .4rem;
+    border: .05rem solid #ccc;
+    border-radius: .25rem;
 }
 
 button {
@@ -39,7 +39,7 @@ button {
     border: none;
     background: #5c7a4b;
     color: white;
-    border-radius: 4px;
+    border-radius: .5rem;
     cursor: pointer;
 }
 
@@ -56,10 +56,10 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: .6rem;
     background: #f9f9f9;
-    margin-bottom: 5px;
-    border-radius: 4px;
+    margin-bottom: .3rem;
+    border-radius: .25rem;
 }
 
 li.completed {
@@ -69,10 +69,10 @@ li.completed {
 
 li button {
     background: #dc3545;
-    padding: 5px;
+    padding: .3rem;
     border: none;
     color: white;
-    border-radius: 4px;
+    border-radius: .25rem;
     cursor: pointer;
 }
 
@@ -81,5 +81,5 @@ li button:hover {
 }
 
 .checkbox {
-    margin-right: 10px;
+    margin-right: .6rem;
 }

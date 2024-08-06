@@ -3,26 +3,26 @@ document.addEventListener('DOMContentLoaded', function() {
     // Display the current date in the element with id 'currentDate'
     document.getElementById('currentDate').innerText = new Date().toLocaleDateString();
 
-    // Get the add button and attach an event listener to it
-    var addButton = document.getElementById('addButton');
+    // Add button and attach an event listener to it
+    let addButton = document.getElementById('addButton');
     addButton.addEventListener('click', addItem);
 });
 
 function addItem() {
     // Get the text from the input field with id 'newItem'
-    var newItemText = document.getElementById('newItem').value;
+    let newItemText = document.getElementById('newItem').value;
     
     // If the input field is empty, do nothing and return
     if (newItemText === '') return;
 
     // Create a new list item (li) element
-    var li = document.createElement('li');
+    let li = document.createElement('li');
     
     // Set the text of the list item to the input field's value
     li.innerText = newItemText;
 
     // Create a checkbox to cross out the item
-    var checkbox = document.createElement('input');
+    let checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     checkbox.className = 'checkbox';
     
@@ -35,7 +35,7 @@ function addItem() {
     li.insertBefore(checkbox, li.firstChild);
 
     // Create a button to delete the item
-    var deleteButton = document.createElement('button');
+    let deleteButton = document.createElement('button');
     deleteButton.innerText = 'Delete';
     
     // Add an event listener to the button to remove the list item
