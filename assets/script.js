@@ -5,3 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
     var addButton = document.getElementsByClassName('add-button');
     addButton.addEventListener('click', addItem)
 });
+
+function addItem() {
+
+    var newItemText = document.getElementById('newItem').value;
+
+    if (newItemText === '') return;
+
+
+}
