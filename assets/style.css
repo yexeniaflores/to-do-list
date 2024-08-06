@@ -15,7 +15,7 @@ body {
     width: 25rem;
     min-height: 30rem;
     text-align: center;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 h1 {
@@ -37,12 +37,13 @@ h1 {
 }
 
 button {
-    padding: .2rem 3rem;
+    padding: .5rem 3rem;
     border: none;
-    background: #5c7a4b;
+    background: #669949;
     color: white;
     border-radius: .5rem;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 button:hover {
