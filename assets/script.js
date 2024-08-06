@@ -33,5 +33,11 @@ function addItem() {
         li.remove();
     });
 
+    li.appendChild(deleteButton);
+
+    document.getElementById('todoList').appendChild(li);
+    
+    document.getElementById('newItem').value = '';
+
 
 }
